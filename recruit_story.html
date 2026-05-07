@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>求職者のみなさまへ | 有限会社 木竜 | 群馬県藤岡市の一般貨物運送</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#2D7D2D;--green-l:#44A044;--green-d:#1A5A1A;--green-pale:rgba(45,125,45,0.06);
+  --black:#0A0A0A;--charcoal:#161616;--ink:#1C1C1C;--silver:#8A8A8A;--silver-l:#B8B8B8;
+  --white:#FFFFFF;--cream:#FAF9F7;--border:rgba(45,125,45,0.2);
+  --serif:'Shippori Mincho',serif;--sans:'Noto Sans JP',sans-serif;--oswald:'Oswald',sans-serif;
+}
+html{scroll-behavior:smooth}body{font-family:var(--sans);color:var(--ink);background:var(--cream);overflow-x:hidden}a{color:inherit;text-decoration:none}
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);height:72px;display:flex;align-items:center;padding:0 32px;justify-content:space-between}
+.hd-logo-en{font-family:var(--oswald);font-size:20px;font-weight:700;color:var(--green-l);letter-spacing:.14em}
+.hd-logo-ja{font-size:10px;color:var(--silver-l);letter-spacing:.16em;display:block;margin-top:2px}
+.hd-logo-bar{width:28px;height:2px;background:var(--green);margin-top:3px}
+.hd-nav{display:flex;gap:2px}
+.hd-nav a{font-size:12px;color:rgba(255,255,255,.65);padding:7px 12px;border-radius:2px;letter-spacing:.06em;transition:color .2s,background .2s}
+.hd-nav a:hover,.hd-nav a.active{color:var(--green-l);background:rgba(45,125,45,.1)}
+.hd-entry{background:var(--green)!important;color:var(--white)!important;font-weight:700;letter-spacing:.1em!important}
+.hd-entry:hover{background:var(--green-l)!important}
+.hd-ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.hd-ham span{display:block;width:22px;height:2px;background:var(--white);transition:transform .3s,opacity .3s}
+.hd-ham.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}.hd-ham.open span:nth-child(2){opacity:0}.hd-ham.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.sp-nav{position:fixed;top:72px;left:0;right:0;background:rgba(10,10,10,.98);z-index:999;display:flex;flex-direction:column;padding:20px;gap:2px;transform:translateY(-120%);transition:transform .35s cubic-bezier(.4,0,.2,1);border-bottom:1px solid var(--border)}
+.sp-nav.open{transform:translateY(0)}.sp-nav a{font-size:14px;color:rgba(255,255,255,.8);padding:13px 14px;border-bottom:1px solid rgba(255,255,255,.05)}
+@media(max-width:1000px){.hd-nav{display:none}.hd-ham{display:flex}}
+
+/* HERO */
+.story-hero{padding-top:72px;min-height:100vh;background:var(--charcoal);display:flex;align-items:center;position:relative;overflow:hidden}
+.story-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 30% 50%,rgba(45,125,45,.18) 0%,transparent 60%)}
+.story-hero-bg{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 60px,rgba(255,255,255,.012) 60px,rgba(255,255,255,.012) 61px),repeating-linear-gradient(90deg,transparent,transparent 60px,rgba(255,255,255,.012) 60px,rgba(255,255,255,.012) 61px)}
+.story-hero-inner{max-width:900px;margin:0 auto;padding:80px 32px;position:relative;z-index:1}
+.story-eyebrow{font-family:var(--oswald);font-size:11px;letter-spacing:.4em;color:var(--green-l);margin-bottom:24px;display:flex;align-items:center;gap:14px}
+.story-eyebrow::before{content:'';width:40px;height:1px;background:var(--green)}
+.story-hero-h1{font-family:var(--serif);font-size:clamp(28px,5vw,62px);font-weight:700;color:var(--white);line-height:1.4;margin-bottom:32px;letter-spacing:.04em}
+.story-hero-h1 em{font-style:normal;color:var(--green-l)}
+.story-hero-sub{font-size:16px;color:rgba(255,255,255,.6);line-height:2;max-width:600px;margin-bottom:48px;font-weight:300;letter-spacing:.06em}
+.story-scroll-hint{display:flex;align-items:center;gap:12px;font-family:var(--oswald);font-size:10px;letter-spacing:.3em;color:rgba(255,255,255,.3)}
+.story-scroll-line{width:60px;height:1px;background:linear-gradient(to right,var(--green),transparent)}
+
+/* SECTION BASE */
+.story-section{padding:120px 32px;max-width:860px;margin:0 auto}
+.story-section.dark{background:var(--charcoal);padding:120px 32px;max-width:100%;margin:0}
+.story-section.dark .inner{max-width:860px;margin:0 auto}
+.story-chapter{font-family:var(--oswald);font-size:10px;letter-spacing:.4em;color:var(--green-l);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.story-chapter::before{content:'';width:28px;height:1px;background:var(--green)}
+.story-h2{font-family:var(--serif);font-size:clamp(24px,3vw,42px);font-weight:700;color:var(--ink);line-height:1.5;margin-bottom:32px;letter-spacing:.04em}
+.story-h2.light{color:var(--white)}
+.story-lead{font-family:var(--serif);font-size:18px;color:var(--ink);line-height:2.1;margin-bottom:28px;font-weight:400;letter-spacing:.04em}
+.story-lead.light{color:rgba(255,255,255,.8)}
+.story-body{font-size:14px;color:var(--silver);line-height:2.2;margin-bottom:20px;letter-spacing:.04em}
+.story-body.light{color:rgba(255,255,255,.55)}
+
+/* PHOTO BOX */
+.photo-box{width:100%;height:380px;background:linear-gradient(135deg,#1a2a1a 0%,#2a3a2a 100%);display:flex;align-items:center;justify-content:center;margin:40px 0;position:relative;overflow:hidden}
+.photo-box::after{content:'PHOTO';font-family:var(--oswald);font-size:11px;letter-spacing:.4em;color:rgba(255,255,255,.12)}
+.photo-box.sm{height:240px}
+.photo-box img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3) brightness(.8)}
+
+/* PULL QUOTE */
+.pull-quote{border-left:3px solid var(--green);padding:28px 32px;margin:48px 0;background:var(--green-pale)}
+.pull-quote-text{font-family:var(--serif);font-size:clamp(18px,2vw,24px);color:var(--ink);line-height:1.7;font-weight:600;margin-bottom:8px;letter-spacing:.04em}
+.pull-quote-attr{font-size:12px;color:var(--silver);letter-spacing:.12em}
+
+/* VALUES */
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin:48px 0}
+.value-item{background:rgba(45,125,45,.06);border:1px solid rgba(45,125,45,.12);padding:36px 28px;text-align:center}
+.value-num{font-family:var(--oswald);font-size:40px;font-weight:700;color:rgba(45,125,45,.2);margin-bottom:12px}
+.value-title{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:10px}
+.value-text{font-size:13px;color:var(--silver);line-height:1.9}
+@media(max-width:680px){.values-grid{grid-template-columns:1fr}}
+
+/* VOICE */
+.voice-box{display:grid;grid-template-columns:100px 1fr;gap:24px;align-items:start;padding:32px;background:var(--white);border:1px solid rgba(0,0,0,.08);margin:28px 0}
+.voice-avatar{width:100px;height:100px;background:linear-gradient(135deg,#1a2a1a,#2a3a2a);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;flex-shrink:0}
+.voice-body .voice-name{font-family:var(--serif);font-size:15px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.voice-body .voice-role{font-size:11px;color:var(--green);letter-spacing:.15em;margin-bottom:14px;font-family:var(--oswald)}
+.voice-body .voice-text{font-size:13px;color:var(--silver);line-height:2}
+@media(max-width:560px){.voice-box{grid-template-columns:64px 1fr}.voice-avatar{width:64px;height:64px;font-size:24px}}
+
+/* ENTRY CTA */
+.entry-cta{background:var(--green-d);padding:120px 32px;text-align:center;position:relative;overflow:hidden}
+.entry-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(45,125,45,.4) 0%,transparent 70%)}
+.entry-cta-label{font-family:var(--oswald);font-size:11px;letter-spacing:.4em;color:rgba(255,255,255,.4);margin-bottom:20px}
+.entry-cta-h2{font-family:var(--serif);font-size:clamp(24px,3vw,42px);color:var(--white);font-weight:700;line-height:1.4;margin-bottom:24px;position:relative}
+.entry-cta-sub{font-size:14px;color:rgba(255,255,255,.55);line-height:1.9;max-width:520px;margin:0 auto 40px;position:relative}
+.btn-entry-big{display:inline-block;background:var(--green-l);color:var(--white);font-size:15px;font-weight:700;padding:18px 52px;border-radius:2px;letter-spacing:.12em;transition:background .2s,transform .15s;position:relative}
+.btn-entry-big:hover{background:var(--green);transform:translateY(-2px)}
+.entry-cta-tel{font-family:var(--oswald);font-size:28px;color:var(--white);letter-spacing:.04em;margin-top:32px;display:block;position:relative}
+.entry-cta-tel-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:4px;position:relative}
+
+/* STORY FOOTER */
+.story-footer{background:var(--black);padding:64px 32px;border-top:1px solid var(--border)}
+.story-footer-inner{max-width:900px;margin:0 auto;text-align:center}
+.story-footer-logo-en{font-family:var(--oswald);font-size:18px;font-weight:700;color:var(--green-l);letter-spacing:.16em;margin-bottom:4px}
+.story-footer-sub{font-size:11px;color:var(--silver);letter-spacing:.12em;margin-bottom:24px}
+.story-footer-nav{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+.story-footer-nav a{font-size:12px;color:var(--silver);transition:color .2s;letter-spacing:.06em}
+.story-footer-nav a:hover{color:var(--green-l)}
+.story-footer-copy{font-size:10px;color:rgba(255,255,255,.2);letter-spacing:.08em}
+
+/* SCROLL ANIMATION */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+
+/* DIVIDER */
+.story-divider{display:flex;align-items:center;gap:20px;margin:60px 0}
+.story-divider-line{flex:1;height:1px;background:rgba(0,0,0,.08)}
+.story-divider-icon{font-size:16px;color:var(--green)}
+.story-divider.light .story-divider-line{background:rgba(255,255,255,.08)}
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<header>
+  <div>
+    <div class="hd-logo-en"><a href="index.html" style="color:inherit">KIRYU</a></div>
+    <span class="hd-logo-ja">有限会社 木竜 — 採用特設ページ</span>
+    <div class="hd-logo-bar"></div>
+  </div>
+  <nav class="hd-nav">
+    <a href="index.html">TOP</a>
+    <a href="#chapter1">Chapter 01</a>
+    <a href="#chapter2">Chapter 02</a>
+    <a href="#chapter3">Chapter 03</a>
+    <a href="recruit.html">採用情報</a>
+    <a href="recruit_story.html" class="active">求職者のみなさまへ</a>
+    <a href="contact.html" class="hd-entry">エントリーする</a>
+  </nav>
+  <button class="hd-ham" id="hdHam"><span></span><span></span><span></span></button>
+</header>
+<nav class="sp-nav" id="spNav">
+  <a href="index.html" onclick="closeSpNav()">TOP</a>
+  <a href="#chapter1" onclick="closeSpNav()">Chapter 01</a>
+  <a href="#chapter2" onclick="closeSpNav()">Chapter 02</a>
+  <a href="#chapter3" onclick="closeSpNav()">Chapter 03</a>
+  <a href="recruit.html" onclick="closeSpNav()">採用情報</a>
+  <a href="recruit_story.html" onclick="closeSpNav()" style="color:var(--green-l)">求職者のみなさまへ</a>
+  <a href="contact.html" onclick="closeSpNav()" style="color:var(--green-l);font-weight:700">エントリーする</a>
+</nav>
+
+<!-- HERO -->
+<section class="story-hero">
+  <div class="story-hero-bg"></div>
+  <div class="story-hero-inner">
+    <div class="story-eyebrow">TO ALL JOB SEEKERS</div>
+    <h1 class="story-hero-h1">
+      一本の道を、<br>
+      <em>まっすぐ走ってほしい。</em>
+    </h1>
+    <p class="story-hero-sub">
+      群馬の空の下で、トラックを走らせる仕事がある。<br>
+      華やかではないかもしれない。でも、確かに誰かの生活を支えている。<br>
+      木竜でドライバーになるということは、そういう仕事を選ぶことだ。
+    </p>
+    <div class="story-scroll-hint"><div class="story-scroll-line"></div>SCROLL TO READ</div>
+  </div>
+</section>
+
+<!-- CHAPTER 01 -->
+<section class="story-section" id="chapter1">
+  <div class="story-chapter reveal">CHAPTER 01</div>
+  <h2 class="story-h2 reveal d1">荷物が届く、その先に<br>誰かの仕事がある。</h2>
+  <p class="story-lead reveal d2">複写機を、オフィスへ運ぶ。工業部品を、工場へ届ける。毎週決まった曜日に、決まった荷物を、決まった場所へ。</p>
+
+  <div class="photo-box reveal">
+    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&q=80" alt="輸送の風景">
+  </div>
+
+  <p class="story-body reveal">木竜のドライバーが運ぶのは「モノ」だけではない。そのモノが届くことで、誰かの商談が始まり、誰かの工場が動き、誰かの仕事が前に進む。</p>
+  <p class="story-body reveal">小さな運送会社かもしれない。でも、担っている役割は決して小さくない。地域の物流を支えるということは、地域に生きる人の仕事を支えることだ。</p>
+
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">「時間通りに届けることが、<br>プロとしての最低限の仕事だと思っています」</p>
+    <span class="pull-quote-attr">— 代表・木竜 光成</span>
+  </div>
+</section>
+
+<!-- CHAPTER 02 (DARK) -->
+<section class="story-section dark" id="chapter2">
+  <div class="inner">
+    <div class="story-chapter reveal" style="color:var(--green-l)">CHAPTER 02</div>
+    <h2 class="story-h2 light reveal d1">「未経験」が、<br>強みになる職場。</h2>
+    <p class="story-lead light reveal d2">木竜に入社したドライバーの多くが、最初は未経験だった。「重いものを運ぶのが怖い」「大きい車の運転に自信がない」——そんな不安を持つ人が、今では現場の中核を担っている。</p>
+
+    <div class="story-divider light reveal"><div class="story-divider-line"></div><div class="story-divider-icon">🚛</div><div class="story-divider-line"></div></div>
+
+    <p class="story-body light reveal">2人1組で動くのが木竜の基本スタイル。だから重量物の搬入も、慣れていなくても安心して取り組める。先輩が横にいる。声をかけてくれる。一緒に考えてくれる。</p>
+
+    <div class="voice-box reveal d1">
+      <div class="voice-avatar">🚗</div>
+      <div class="voice-body">
+        <div class="voice-name">入社3年目 ドライバー</div>
+        <div class="voice-role">DRIVER / 20代</div>
+        <p class="voice-text">「前職は全然違う仕事をしていました。最初は不安でしたが、先輩が丁寧に教えてくれたおかげで半年でルートを任せてもらえるようになりました。チームワークが本当に大事だと実感しています。」</p>
+      </div>
+    </div>
+
+    <div class="voice-box reveal d2">
+      <div class="voice-avatar">📦</div>
+      <div class="voice-body">
+        <div class="voice-name">入社1年目 配送助手</div>
+        <div class="voice-role">ASSISTANT / 30代</div>
+        <p class="voice-text">「子育てを終えて再就職しました。体力仕事は心配でしたが、2人で動くので思ったよりずっと楽です。職場の雰囲気も良くて、続けていける自信がつきました。」</p>
+      </div>
+    </div>
+
+    <div class="values-grid reveal">
+      <div class="value-item"><div class="value-num">01</div><div class="value-title">丁寧な指導</div><p class="value-text">先輩が横についてOJT。焦らず着実にスキルを身につけられます</p></div>
+      <div class="value-item"><div class="value-num">02</div><div class="value-title">チームワーク</div><p class="value-text">2人1組が基本。一人で抱え込まず、チームで動く文化があります</p></div>
+      <div class="value-item"><div class="value-num">03</div><div class="value-title">安定した収入</div><p class="value-text">月給22万円〜。各種手当が充実し、月収25万円以上も可能</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER 03 -->
+<section class="story-section" id="chapter3">
+  <div class="story-chapter reveal">CHAPTER 03</div>
+  <h2 class="story-h2 reveal d1">群馬の道を、<br>自分の庭にしていく。</h2>
+  <p class="story-lead reveal d2">藤岡を出発点に、高崎へ、前橋へ、伊勢崎へ——群馬の道を走り続けるうちに、それはいつの間にか「知っている道」になる。</p>
+
+  <div class="photo-box reveal">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80" alt="群馬の道">
+  </div>
+
+  <p class="story-body reveal">毎朝、出発前に車両点検をする。乗務中は安全第一で走る。届け先で「ありがとう」と言われる。そして戻ってくる。</p>
+  <p class="story-body reveal">単純に見えるかもしれない。でも、その繰り返しの中に、プロとしての誇りが育っていく。木竜のドライバーは、みんなそうして一人前になっていった。</p>
+
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">「この仕事を続けていると、<br>地域を支えているんだという実感が<br>じわじわとわいてくる」</p>
+    <span class="pull-quote-attr">— ベテランドライバー</span>
+  </div>
+</section>
+
+<!-- ENTRY CTA -->
+<section class="entry-cta">
+  <div class="entry-cta-label">JOIN US</div>
+  <h2 class="entry-cta-h2 reveal">一緒に走りませんか。</h2>
+  <p class="entry-cta-sub reveal d1">未経験歓迎・若手活躍中。<br>まずはお気軽にご連絡ください。</p>
+  <a href="contact.html" class="btn-entry-big reveal d2">エントリー・お問い合わせ</a>
+  <a href="tel:0274509171" class="entry-cta-tel reveal d3">0274-50-9171</a>
+  <p class="entry-cta-tel-sub reveal d3">受付時間：平日 8:00〜18:00</p>
+</section>
+
+<!-- STORY FOOTER -->
+<footer class="story-footer">
+  <div class="story-footer-inner">
+    <div class="story-footer-logo-en">KIRYU</div>
+    <div class="story-footer-sub">有限会社 木竜 — 採用特設ページ</div>
+    <nav class="story-footer-nav">
+      <a href="index.html">TOP</a>
+      <a href="service.html">サービス案内</a>
+      <a href="works.html">実績紹介</a>
+      <a href="company.html">会社概要</a>
+      <a href="recruit.html">採用情報</a>
+      <a href="recruit_story.html">求職者のみなさまへ</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="story-footer-copy">© 2024 有限会社 木竜. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<script>
+const hdHam=document.getElementById('hdHam');const spNav=document.getElementById('spNav');
+hdHam.addEventListener('click',()=>{hdHam.classList.toggle('open');spNav.classList.toggle('open');document.body.style.overflow=spNav.classList.contains('open')?'hidden':''});
+function closeSpNav(){hdHam.classList.remove('open');spNav.classList.remove('open');document.body.style.overflow=''}
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();closeSpNav();const el=document.querySelector(a.getAttribute('href'));if(el)el.scrollIntoView({behavior:'smooth'})})});
+// Reveal
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

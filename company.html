@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会社概要 | 有限会社 木竜 | 群馬県藤岡市の一般貨物運送</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#2D7D2D;--green-l:#44A044;--green-d:#1A5A1A;--black:#0A0A0A;--charcoal:#161616;--silver:#8A8A8A;--silver-l:#B8B8B8;--silver-p:#E0E0E0;--white:#FFFFFF;--light:#F2F4F2;--border:rgba(45,125,45,0.2)}
+html{scroll-behavior:smooth}body{font-family:'Noto Sans JP',sans-serif;color:var(--charcoal);background:var(--white);overflow-x:hidden}a{color:inherit;text-decoration:none}
+#site-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);height:72px;display:flex;align-items:center}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;flex-direction:column;line-height:1;gap:2px}.logo-en{font-family:'Oswald',sans-serif;font-size:22px;font-weight:700;color:var(--green-l);letter-spacing:.14em}.logo-ja{font-size:10px;color:var(--silver-l);letter-spacing:.18em}.logo-bar{width:32px;height:2px;background:var(--green);margin-top:4px}
+nav.pc-nav{display:flex;gap:2px}
+nav.pc-nav a{font-size:13px;color:rgba(255,255,255,.72);padding:8px 13px;border-radius:2px;letter-spacing:.06em;transition:color .2s,background .2s}
+nav.pc-nav a:hover,nav.pc-nav a.active{color:var(--green-l);background:rgba(45,125,45,.1)}
+.header-cta{display:flex;align-items:center;gap:14px}
+.header-tel{font-family:'Oswald',sans-serif;font-size:18px;color:var(--white);letter-spacing:.06em;line-height:1}
+.header-tel span{font-size:10px;font-family:'Noto Sans JP',sans-serif;display:block;color:var(--silver-l);letter-spacing:.1em;margin-bottom:2px}
+.btn-primary{background:var(--green);color:var(--white);font-size:12px;font-weight:700;padding:10px 20px;border-radius:2px;letter-spacing:.1em;transition:background .2s;white-space:nowrap}
+.btn-primary:hover{background:var(--green-l)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--white);transition:transform .3s,opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}.hamburger.open span:nth-child(2){opacity:0}.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{position:fixed;top:72px;left:0;right:0;background:rgba(10,10,10,.98);z-index:999;display:flex;flex-direction:column;padding:24px;gap:4px;transform:translateY(-120%);transition:transform .35s cubic-bezier(.4,0,.2,1);border-bottom:1px solid var(--border)}
+.mobile-nav.open{transform:translateY(0)}.mobile-nav a{font-size:15px;color:rgba(255,255,255,.8);padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.05)}
+@media(max-width:1100px){nav.pc-nav{display:none}}@media(max-width:900px){.header-tel{display:none}.hamburger{display:flex}}@media(max-width:640px){.btn-primary{display:none}}
+/* PAGE HERO */
+.page-hero{padding-top:72px;background:var(--charcoal);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(45,125,45,.15) 0%,transparent 60%)}
+.page-hero-inner{max-width:1160px;margin:0 auto;padding:72px 24px 64px}
+.page-hero-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.4em;color:var(--green-l);margin-bottom:16px}
+.page-hero h1{font-family:'Noto Serif JP',serif;font-size:clamp(28px,4vw,52px);color:var(--white);font-weight:700;margin-bottom:16px}
+.page-hero-sub{font-size:15px;color:var(--silver);line-height:1.8;margin-bottom:24px}
+.breadcrumb{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--silver)}.breadcrumb a{color:var(--silver)}.sep{opacity:.4}
+/* MESSAGE */
+.message-section{padding:96px 24px;background:var(--white)}
+.message-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.message-img{overflow:hidden;border-radius:2px}
+.message-img img{width:100%;height:420px;object-fit:cover;filter:grayscale(.2)}
+.message-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.3em;color:var(--green);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.message-label::before{content:'';width:28px;height:1px;background:var(--green)}
+.message-h2{font-family:'Noto Serif JP',serif;font-size:clamp(22px,2.5vw,32px);font-weight:700;color:var(--charcoal);line-height:1.4;margin-bottom:24px}
+.message-text{font-size:14px;color:var(--silver);line-height:2.1;margin-bottom:20px}
+.message-sign{font-family:'Noto Serif JP',serif;font-size:15px;color:var(--charcoal);font-weight:700;text-align:right;padding-top:20px;border-top:1px solid rgba(0,0,0,.08)}
+.message-sign span{font-size:12px;color:var(--silver);font-family:'Noto Sans JP',sans-serif;font-weight:400;display:block;margin-bottom:4px}
+@media(max-width:768px){.message-inner{grid-template-columns:1fr}}
+/* OVERVIEW TABLE */
+.overview-section{padding:96px 24px;background:var(--light)}
+.overview-inner{max-width:900px;margin:0 auto}
+.section-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.28em;color:var(--green);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.section-label::before{content:'';display:block;width:28px;height:1px;background:var(--green)}
+.section-title{font-family:'Noto Serif JP',serif;font-size:clamp(24px,3vw,36px);color:var(--charcoal);font-weight:700;margin-bottom:48px;line-height:1.35}
+.company-table{width:100%;border-collapse:collapse}
+.company-table tr{border-bottom:1px solid rgba(0,0,0,.08)}
+.company-table th{width:160px;padding:20px 16px 20px 0;font-size:13px;font-weight:700;color:var(--charcoal);text-align:left;vertical-align:top;white-space:nowrap}
+.company-table td{padding:20px 0 20px 16px;font-size:14px;color:var(--silver);line-height:1.8;border-left:2px solid var(--green)}
+@media(max-width:560px){.company-table th{width:100px;font-size:12px}.company-table td{font-size:13px}}
+/* MAP */
+.map-section{padding:96px 24px;background:var(--white)}
+.map-inner{max-width:1160px;margin:0 auto}
+.map-embed{width:100%;height:400px;border:0;filter:grayscale(.3);margin-top:48px}
+/* CTA / FOOTER */
+.cta-band{background:var(--green-d);padding:72px 24px;text-align:center}
+.cta-band-title{font-family:'Noto Serif JP',serif;font-size:clamp(20px,2.5vw,30px);color:var(--white);font-weight:700;margin-bottom:12px}
+.cta-band-sub{font-size:14px;color:rgba(255,255,255,.55);margin-bottom:32px}
+.cta-band-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-g{background:var(--green-l);color:var(--white);font-size:13px;font-weight:700;padding:14px 36px;border-radius:2px;letter-spacing:.1em;transition:background .2s}.btn-g:hover{background:var(--green)}
+.btn-outline-w{border:1px solid rgba(255,255,255,.4);color:var(--white);font-size:13px;padding:13px 36px;border-radius:2px;letter-spacing:.1em;transition:border-color .2s}.btn-outline-w:hover{border-color:var(--green-l)}
+footer{background:var(--black);padding:64px 24px 0;border-top:1px solid var(--border)}
+.footer-inner{max-width:1160px;margin:0 auto}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer-desc{font-size:13px;color:var(--silver);line-height:1.9;margin-bottom:20px}.footer-address{font-size:12px;color:var(--silver);line-height:2;font-style:normal}
+.footer-col-title{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.2em;color:var(--green-l);margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.footer-links{list-style:none}.footer-links li{margin-bottom:8px}.footer-links a{font-size:13px;color:var(--silver);transition:color .2s}.footer-links a:hover{color:var(--green-l)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding:24px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.2)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr;gap:32px}}
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}.fade-up.visible{opacity:1;transform:translateY(0)}.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+</style>
+</head>
+<body>
+<header id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="logo-en">KIRYU</span><span class="logo-ja">有限会社 木竜</span><span class="logo-bar"></span></a>
+    <nav class="pc-nav">
+      <a href="service.html">サービス案内</a><a href="works.html">実績紹介</a>
+      <a href="company.html" class="active">会社概要</a>
+      <a href="recruit.html">採用情報</a><a href="recruit_story.html">求職者のみなさまへ</a><a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:0274509171" class="header-tel"><span>お気軽にご相談ください</span>0274-50-9171</a>
+      <a href="contact.html" class="btn-primary">お問い合わせ</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="service.html" onclick="closeMenu()">サービス案内</a><a href="works.html" onclick="closeMenu()">実績紹介</a><a href="company.html" onclick="closeMenu()">会社概要</a><a href="recruit.html" onclick="closeMenu()">採用情報</a><a href="recruit_story.html" onclick="closeMenu()">求職者のみなさまへ</a><a href="contact.html" onclick="closeMenu()">お問い合わせ</a>
+  <a href="tel:0274509171" style="color:var(--green-l);font-family:'Oswald',sans-serif;font-size:22px;border-bottom:none">0274-50-9171</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-label">COMPANY</div>
+    <h1>会社概要</h1>
+    <p class="page-hero-sub">地域の物流を支える、群馬県藤岡市の運送会社</p>
+    <nav class="breadcrumb"><a href="index.html">TOP</a><span class="sep">›</span><span>会社概要</span></nav>
+  </div>
+</section>
+
+<!-- 代表メッセージ -->
+<section class="message-section">
+  <div class="message-inner">
+    <div class="message-img fade-up">
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="代表メッセージ">
+    </div>
+    <div class="fade-up d1">
+      <div class="message-label">MESSAGE</div>
+      <h2 class="message-h2">荷物を届けることは、<br>信頼を届けること。</h2>
+      <p class="message-text">私たちが運ぶのは荷物だけではありません。お客様から預けていただいた大切なものを、約束した時間に、約束した場所へ。その一点に全力を尽くすことが、私たちの仕事の本質だと考えています。</p>
+      <p class="message-text">創業以来、群馬県を中心に一般貨物輸送・機器搬入搬出・定期配送に取り組んでまいりました。どんな小さな依頼にも誠実に向き合い、地域の皆様に必要とされる運送会社であり続けたいと思います。</p>
+      <div class="message-sign">
+        <span>有限会社 木竜 代表</span>
+        木竜 光成
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 会社概要テーブル -->
+<section class="overview-section">
+  <div class="overview-inner">
+    <div class="section-label fade-up">OVERVIEW</div>
+    <h2 class="section-title fade-up d1">会社概要</h2>
+    <table class="company-table fade-up d2">
+      <tr><th>会社名</th><td>有限会社 木竜</td></tr>
+      <tr><th>英語表記</th><td>KIRYU CO., LTD.</td></tr>
+      <tr><th>代表者</th><td>木竜 光成</td></tr>
+      <tr><th>事業内容</th><td>一般貨物自動車運送事業</td></tr>
+      <tr><th>所在地</th><td>〒375-0003 群馬県藤岡市立石新田118</td></tr>
+      <tr><th>電話番号</th><td><a href="tel:0274509171" style="color:var(--green)">0274-50-9171</a></td></tr>
+      <tr><th>アクセス</th><td>JR八高線「新町駅」より徒歩約10分 / 車通勤可</td></tr>
+      <tr><th>対応エリア</th><td>群馬県全域（藤岡市・高崎市・前橋市・伊勢崎市ほか）</td></tr>
+      <tr><th>主な車両</th><td>2tトラック（複数台体制）</td></tr>
+      <tr><th>許認可</th><td>一般貨物自動車運送事業許可</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- アクセスマップ -->
+<section class="map-section">
+  <div class="map-inner">
+    <div class="section-label fade-up">ACCESS</div>
+    <h2 class="section-title fade-up d1">アクセスマップ</h2>
+    <p style="font-size:14px;color:var(--silver);margin-bottom:0;line-height:1.8" class="fade-up d1">〒375-0003 群馬県藤岡市立石新田118 ／ JR八高線「新町駅」より徒歩約10分</p>
+    <iframe class="map-embed fade-up d2"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.0!2d139.076!3d36.258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ef4e6a5b6c6a3%3A0x0!2z576O5bqX55yM576k5bKh5biC56uL55Sf5paw55Sj!5e0!3m2!1sja!2sjp!4v1700000000000"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="有限会社木竜 アクセスマップ">
+    </iframe>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="cta-band-title">輸送・搬入のご相談はお気軽に</div>
+  <p class="cta-band-sub">お見積もりは無料です。まずはお問い合わせください。</p>
+  <div class="cta-band-btns">
+    <a href="contact.html" class="btn-g">メールで相談する</a>
+    <a href="tel:0274509171" class="btn-outline-w">📞 0274-50-9171</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div><div style="margin-bottom:20px"><div style="font-family:'Oswald',sans-serif;font-size:20px;font-weight:700;color:var(--green-l);letter-spacing:.14em">KIRYU</div><div style="font-size:10px;color:var(--silver-l)">有限会社 木竜</div><div style="width:32px;height:2px;background:var(--green);margin-top:4px"></div></div>
+      <p class="footer-desc">群馬県藤岡市を拠点に一般貨物運送を手がける有限会社木竜。安全・確実・誠実を基本に、地域の物流を支えます。</p>
+      <address class="footer-address">〒375-0003 群馬県藤岡市立石新田118<br>TEL: 0274-50-9171<br>代表: 木竜 光成</address></div>
+      <div><div class="footer-col-title">SERVICES</div><ul class="footer-links"><li><a href="service.html#general">一般貨物輸送</a></li><li><a href="service.html#equipment">機器搬入・搬出</a></li><li><a href="service.html#regular">定期配送ルート</a></li></ul></div>
+      <div><div class="footer-col-title">PAGES</div><ul class="footer-links"><li><a href="index.html">TOP</a></li><li><a href="service.html">サービス案内</a></li><li><a href="works.html">実績紹介</a></li><li><a href="company.html">会社概要</a></li><li><a href="recruit.html">採用情報</a></li><li><a href="recruit_story.html">求職者のみなさまへ</a></li><li><a href="contact.html">お問い合わせ</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2024 有限会社 木竜. All Rights Reserved.</p><p class="footer-copy">群馬県藤岡市立石新田118</p></div>
+  </div>
+</footer>
+<script>
+const ham=document.getElementById('hamburger');const mNav=document.getElementById('mobileNav');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mNav.classList.toggle('open');document.body.style.overflow=mNav.classList.contains('open')?'hidden':''});
+function closeMenu(){ham.classList.remove('open');mNav.classList.remove('open');document.body.style.overflow=''}
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
